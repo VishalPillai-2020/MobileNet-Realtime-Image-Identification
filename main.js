@@ -12,7 +12,7 @@ function draw(){
   image(video, 0, 0, 300, 300);
  classifier.classify(video, gotresult);
 }
-function gotresult(results, error){
+function gotresult(error, results){
   if (error){
     console.error(error);
   }
